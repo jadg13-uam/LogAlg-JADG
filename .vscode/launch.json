@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/LABC204.UAM/Desktop/Clone/LogAlg-JADG",
-      "program": "c:/Users/LABC204.UAM/Desktop/Clone/LogAlg-JADG/build/Debug/outDebug",
+      "cwd": "c:/Users/LABC204.UAM/Documents/cositas/LogAlg-JADG",
+      "program": "c:/Users/LABC204.UAM/Documents/cositas/LogAlg-JADG/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
         printf("Apellidos: ");
         scanf(" %[^\n]", students[i].lastName);
         printf("Nota: ");
-        scanf("%d", students[i].grade);
+        scanf("%d", &students[i].grade);
 
         printf("Desea ingresar otro registro \n 1. Si \n 0. No \n Digite su Opcion: ");
         cin >> op;

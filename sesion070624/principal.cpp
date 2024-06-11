@@ -1,6 +1,6 @@
 #include <iostream>
 #include <locale.h>
-#include "funciones.cpp"
+#include "daoCiudad.cpp"
 
 using namespace std;
 

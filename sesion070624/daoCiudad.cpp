@@ -80,6 +80,9 @@ void principal(){
             case 1:
                 pedirDatos();
                 break;
+            case 5:
+                mostrarDatos();
+                break;
             case 6:
                 cout << "Adios, mi tierno\n";
                 break;
@@ -97,9 +100,9 @@ void pedirDatos(){
     cout << "ID: ";
     cin >> ciudad.id;
     cout << "NOMBRE: ";
-    cin >> ciudad.nombre;
+    scanf(" %[^\n]", ciudad.nombre);
     cout << "DESCRIPCION: ";
-    cin >> ciudad.descripcion;
+    scanf(" %[^\n]", ciudad.descripcion);
     agregar(&ciudad);
     cout << "Registro Agregado....\n";
 }

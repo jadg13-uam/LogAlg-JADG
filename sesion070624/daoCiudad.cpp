@@ -80,7 +80,7 @@ int menu()
     cout << "4. Buscar \n";
     cout << "5. Mostrar Todo\n";
     cout << "6. Salir\n ";
-    cout << "Digite la opciÃ³n ";
+    cout << "Digite la opción ";
     cin >> op;
     return op;
 }
@@ -151,6 +151,6 @@ void buscarxID()
     cout << "==============================" << endl;
 }
 
-void editarDatos(){
-    int id
-}
+// void editarDatos(){
+//     int id
+// }

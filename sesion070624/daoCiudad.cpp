@@ -18,6 +18,7 @@ int menu();
 void principal();
 void pedirDatos();
 void mostrarDatos();
+void showData(CIUDAD &c);
 void buscarxID();
 void editarDatos();
 
@@ -131,9 +132,7 @@ void mostrarDatos()
 {
     for (int i = 0; i < pos; i++)
     {
-        cout << "ID: " << ciudades[i].id << endl;
-        cout << "Nombre: " << ciudades[i].nombre << endl;
-        cout << "Descripcion " << ciudades[i].descripcion << endl;
+        showData(ciudades[i]);
     }
 }
 
@@ -144,6 +143,10 @@ void buscarxID()
     cin >> id;
     CIUDAD c;
     c = buscar(id);
+    showData(c);
+}
+
+void showData(CIUDAD &c){
     cout << "==============================" << endl;
     cout << c.id << endl;
     cout << c.nombre << endl;

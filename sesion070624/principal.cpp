@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
     /* code */
     setlocale(LC_ALL, "spanish");

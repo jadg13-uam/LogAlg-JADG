@@ -21,6 +21,7 @@ void mostrarDatos();
 void showData(CIUDAD &c);
 void buscarxID();
 void editarDatos();
+void eliminarDato();
 
 void agregar(CIUDAD *c)
 {
@@ -97,6 +98,12 @@ void principal()
         case 1:
             pedirDatos();
             break;
+        case 2:
+            editarDatos();
+            break;
+        case 3:
+            eliminarDato();
+            break;
         case 4:
             buscarxID();
             break;
@@ -154,6 +161,23 @@ void showData(CIUDAD &c){
     cout << "==============================" << endl;
 }
 
-// void editarDatos(){
-//     int id
-// }
+void editarDatos(){
+     int id;
+     cout << "Escribe el id de la ciudad a editar" << endl;
+     cin >> id;
+     CIUDAD c = buscar(id);
+     cout << "Nombre: ";
+     scanf(" %[^\n]", c.nombre);
+     cout << "Descripción: " ;
+     scanf(" %[^\n]", c.descripcion);
+     editar(&c, id);
+     cout << "Registro actualizado...\n";
+}
+
+void eliminarDato(){
+    int id;
+    cout << "Ciudad - Eliminar\n";
+    cout << "ID: ";
+    cin >> id;
+    eliminar(id);
+}
